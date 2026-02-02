@@ -1,0 +1,34 @@
+{
+	"compilerOptions": {
+		"target": "es2022",
+		"module": "commonjs",
+		"lib": ["es2022"],
+		"outDir": "./dist",
+		"rootDir": "./src",
+
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+
+		"baseUrl": "./src",
+		"paths": {
+			"@/*": ["*"]
+		},
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+
+		"declaration": true,
+		"declarationMap": true,
+		"sourceMap": true,
+		"removeComments": false,
+		"noEmitOnError": true,
+
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true
+	},
+
+	"include": ["src/**/*"],
+
+	"exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts", "**/*.mock.ts"]
+}
