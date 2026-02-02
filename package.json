@@ -1,0 +1,23 @@
+{
+	"name": "database-engine",
+	"version": "1.0.0",
+	"description": "TypeScript Node.js project",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "tsc && node esbuild.mjs && bytenode --compile build/DatabaseEngine.js && rm build/DatabaseEngine.js"
+	},
+	"dependencies": {
+		"module-alias": "^2.2.3",
+		"tsconfig-paths": "^4.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.0.0",
+		"esbuild": "^0.27.2",
+		"ts-node": "^10.9.0",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.0.0"
+	},
+	"_moduleAliases": {
+		"@": "dist"
+	}
+}
