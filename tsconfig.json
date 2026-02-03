@@ -5,6 +5,8 @@
 		"lib": ["es2022"],
 		"outDir": "./dist",
 		"rootDir": "./src",
+		"typeRoots": ["./types", "./node_modules/@types"],
+		"types": ["node", "bytenode"],
 
 		"strict": true,
 		"esModuleInterop": true,
